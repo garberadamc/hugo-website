@@ -1,0 +1,28 @@
+---
+title: "Create a website with Hugo (Demo by Dina & Alison Hill)"
+author: "Adam Garber"
+date: '2023-01-30'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Step-by-step tutorial: 
+https://hugo-apero-docs.netlify.app/start/setup/
+
+Example (Apres Hill):
+https://www.apreshill.com/about/
+
+
+```{r}
+library(blogdown)
+
+new_site(theme = "hugo-apero/hugo-apero", 
+           format = "toml",
+           sample = FALSE,
+           empty_dirs = TRUE)
+```
+
+
